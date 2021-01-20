@@ -87,7 +87,32 @@
       </div>
     </main>
    
-    
+    <div id="recomend__widget"></div>
+<script>
+  ;(function(window) {
+    var s = document.createElement('script')
+    s.async = true
+    s.src = 'https://widget.recomend.io/v1.js'
+    s.onload = () => {
+      RecomendWidget.mount({
+        apiKey: 'a72ntf0l9lijgzx2vxloha',
+        product: {
+          id: YourProductId,
+          name: 'Product Name',
+          location: "https://null/my-product-123",
+          preview: "https://null/my-product-123/preview.jpg"
+        },
+        user: {
+          id: 456,
+          name: "Johnny Purchaser"
+        }
+      })
+    }
+    var x = document.getElementsByTagName('script')[0]
+    x.parentNode.insertBefore(s, x)
+  })(window, undefined)
+</script>
+
     
    
     <!---------------------------------------------->
